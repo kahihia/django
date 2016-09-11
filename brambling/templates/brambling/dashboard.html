@@ -7,12 +7,14 @@
 {% block content %}
 	<div class="row">
 		<div class="col-sm-4 col-sm-push-8 col-md-3 col-md-push-9">
+			<img src="{% static 'brambling/images/shiv-nadar-logo.gif' %}" class="img-responsive hidden-xs" style="padding-bottom: 10px;">
+
 			{% if not request.user.is_authenticated or not organizations and not admin_events %}
 				{% if not request.COOKIES.hideCall %}
 					<div class='panel panel-default' id='hidePanel'>
 						<div class='panel-body'>
-							<p><strong>Dancerfly</strong> is an event registration system built <strong>by dancers, for dancers.</strong></p>
-							<p>Want to use Dancerfly for <em>your</em> event?</p>
+							<p><strong>Breeze</strong> is an event registration system built <strong>by dancers, for dancers.</strong></p>
+							<p>Want to use Breeze for <em>your</em> event?</p>
 							<p>
 								<a class='btn btn-primary' href='{% url "brambling_about" %}'>Learn more <i class='fa fa-chevron-right'></i></a>
 								<a id='hideCall' class='btn btn-link'>Hide this forever</a>
@@ -64,7 +66,6 @@
 					</div>
 				</div>
 			{% endif %}
-			<img src="{% static 'brambling/images/watcher-cropped.jpg' %}" width="202" class="img-responsive hidden-xs">
 		</div>
 		<div class="col-sm-8 col-sm-pull-4 col-md-9 col-md-pull-3">
 			{% block messages %}
@@ -81,10 +82,10 @@
 
 							<button class="close"><span aria-hidden="true">&times;</span></button>
 
-							<p><strong>Welcome to Dancerfly!</strong></p>
+							<p><strong>Welcome to Breeze!</strong></p>
 
 							<p>
-								Thanks for signing up for Dancerfly.
+								Thanks for signing up for Breeze.
 								We&#8217;re happy to have you here! If you were registering
 								for an event, head back to that event page. We&#8217;ll keep
 								you logged in so you can register quickly.

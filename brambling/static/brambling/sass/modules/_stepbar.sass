@@ -27,11 +27,11 @@
 	&.complete, &.current
 		background: lighten($brand-primary,2%)
 		color: #FFF
-		border-color: $yellow-darker
+		border-color: $blue-darker
 		&:last-child
-			+box-shadow(-1px 0 0 0 $yellow-darker)
+			+box-shadow(-1px 0 0 0 $blue-darker)
 	&.current
-		background: darken($yellow-dark,5%)
+		background: darken($blue-dark,5%)
 		position: relative
 		&:after
 			content: " "
@@ -56,7 +56,7 @@
 			right: 0
 			height: 0
 			width: 0
-			border-bottom: 7px solid $yellow-darker
+			border-bottom: 7px solid $blue-darker
 			border-left: 6px solid transparent
 			border-right: 6px solid transparent
 	.stepbar-1-up > &
@@ -82,7 +82,7 @@ a.step
 		text-decoration: none
 		background: darken(whitesmoke, 7%)
 	&.complete:hover
-		background: $yellow-dark
+		background: $blue-dark
 
 // VARIANTS
 
